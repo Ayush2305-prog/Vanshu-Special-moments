@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.event:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.hidden {
+    display: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Falling Rose Petals Animation */
+@keyframes fall {
+    0% { transform: translateY(-100px); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.rose {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fall 5s linear infinite;
+}
+
+/* Glowing Hearts Animation */
+@keyframes glow {
+    0% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+    100% { opacity: 0.5; transform: scale(1); }
+}
+
+.glowing-heart {
+    color: red;
+    font-size: 30px;
+    animation: glow 2s infinite;
+}

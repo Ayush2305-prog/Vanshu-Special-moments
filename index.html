@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanshu's Special Moments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Vanshu's Special Moments</h1>
+        
+        <!-- Engagement Anniversary -->
+        <div class="event" onclick="showMessage('engagement')">
+            <img src="ring.png" alt="Ring Icon">
+            <p>💍 25 April - Our Engagement Day</p>
+        </div>
+        <div id="engagementMessage" class="hidden message">
+            <p>Vanshu, this was the day we promised forever. And every day since, you’ve made me the happiest! 💖</p>
+        </div>
+
+        <!-- Proposal Day -->
+        <div class="event" onclick="showMessage('proposal')">
+            <img src="heart.png" alt="Heart Icon">
+            <p>💖 20 August - You Proposed to Me!</p>
+        </div>
+        <div id="proposalMessage" class="hidden message">
+            <p>I still can’t believe you actually proposed to me! Vanshu, you made that day magical, and I’ll always cherish it! ❤</p>
+        </div>
+
+        <!-- Vanshika's Birthday -->
+        <div class="event" onclick="showMessage('birthday')">
+            <img src="cake.png" alt="Cake Icon">
+            <p>🎂 21 January - Vanshu's Birthday</p>
+        </div>
+        <div id="birthdayMessage" class="hidden message">
+            <p>Happy Birthday, Vanshu! You are my cutest happiness, my forever partner in teasing and love. 🎉</p>
+        </div>
+
+        <!-- Your Birthday -->
+        <div class="event" onclick="showMessage('yourBirthday')">
+            <img src="gift.png" alt="Gift Icon">
+            <p>🎁 23 May - My Birthday</p>
+        </div>
+        <div id="yourBirthdayMessage" class="hidden message">
+            <p>Vanshu, this is the day I got the most precious gift—YOU in my life! 🎁💝</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
